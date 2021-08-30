@@ -3,8 +3,8 @@ class YtDlp < Formula
 
   desc "A youtube-dl fork with additional features and fixes"
   homepage "https://github.com/yt-dlp/yt-dlp"
-  url "https://files.pythonhosted.org/packages/ee/72/836432d93dfb518dfe9e930d5e0da354f27ceaa3280157e89d0cadec7c52/yt_dlp-2021.8.10-py2.py3-none-any.whl"
-  sha256 "7c12ead6df0744c87b7d78e1cf4678f9e1c6e6cd1517af9b9cec3af4f2aca69a"
+  url "https://files.pythonhosted.org/packages/ee/59/d763a51fa975639946c327ffbf85e109dbaa87f8aa5cae54a4ee5d09593c/yt-dlp-2021.8.10.tar.gz"
+  sha256 "8da1bf4dc4641d37d137443c4783109ee8393caad5e0d270d9d1d534e8f25240"
   license "Unlicense"
 
   bottle :unneeded
@@ -13,9 +13,9 @@ class YtDlp < Formula
 
   def install
     virtualenv_install_with_resources
-    man1.install_symlink libexec/"share/man/man1/yt-dlp.1" => "yt-dlp.1"
-    bash_completion.install libexec/"etc/bash_completion.d/yt-dlp.bash-completion"
-    fish_completion.install libexec/"etc/fish/completions/yt-dlp.fish"
+    bash_completion.install libexec/"completions/bash/yt-dlp"
+    fish_completion.install libexec/"completions/fish/yt-dlp.fish"
+    zsh_completion.install libexec/"completions/zsh/_yt-dlp"
   end
 
   test do
