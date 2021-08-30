@@ -1,6 +1,6 @@
 # Homebrew tap for yt-dlp
 
-This is a Homebrew tap for [yt-dlp](https://github.com/yt-dlp/yt-dlp) and some other applications (if any).
+This is a Homebrew tap for [yt-dlp](https://github.com/yt-dlp/yt-dlp).
 
 # Installation
 Once you have installed Homebrew on macOS/Linux, type
