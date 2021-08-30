@@ -13,9 +13,9 @@ class YtDlp < Formula
 
   def install
     virtualenv_install_with_resources
-    bash_completion.install libexec/"completions/bash/yt-dlp"
-    fish_completion.install libexec/"completions/fish/yt-dlp.fish"
-    zsh_completion.install libexec/"completions/zsh/_yt-dlp"
+    bash_completion.install "completions/bash/yt-dlp"
+    fish_completion.install "completions/fish/yt-dlp.fish"
+    zsh_completion.install "completions/zsh/_yt-dlp"
   end
 
   test do
