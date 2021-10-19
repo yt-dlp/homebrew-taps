@@ -7,8 +7,6 @@ class YtDlp < Formula
   sha256 "cc96211e8e55ebbb48d2e6609c0d0942507eb5471b2ce74e38f7b95f8d70a4e7"
   license "Unlicense"
 
-  bottle :unneeded
-
   depends_on "python@3.9"
 
   def install
