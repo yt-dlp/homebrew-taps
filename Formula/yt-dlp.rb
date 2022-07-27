@@ -7,7 +7,7 @@ class YtDlp < Formula
   sha256 "0e7b81fc6ac8d1b7d3fffa79f9044ca4163784422582c9a3593305da2a69ec02"
   license "Unlicense"
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   resource "Brotli" do
     url "https://files.pythonhosted.org/packages/2a/18/70c32fe9357f3eea18598b23aa9ed29b1711c3001835f7cf99a9818985d0/Brotli-1.0.9.zip"
